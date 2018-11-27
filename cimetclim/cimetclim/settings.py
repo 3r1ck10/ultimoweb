@@ -40,7 +40,6 @@ INSTALLED_APPS = [
     'inicio',
     'servicios',
     'cambioc',
-    'estaciones',
 
 ]
 
