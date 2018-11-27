@@ -22,7 +22,7 @@ from estaciones import views as views_estaciones
 
 urlpatterns = [
     path('servicios/',views_servicios.servicios,name='servicios'),
-    path('estaciones/',views_estaciones.Plot2DView.as_view(),name='estaciones'),
+    path('estaciones/',views_cambioc.cambioc,name='estaciones'),
     path('cambioc/',views_cambioc.cambioc,name='cambioc'),
     path('', include('inicio.urls')),
     path('admin/', admin.site.urls),
