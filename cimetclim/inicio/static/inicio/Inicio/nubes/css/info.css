@@ -1,0 +1,118 @@
+.info {
+    background: white;
+    color: #000;
+    font-size: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+.info .contenidopo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    line-height: 90px;
+}
+
+.row, .info .contenidopo .info-it1,.info-it2,.info-it3,.info-it4,.info-it5,.info-it6,.info-it7,.info-it8,.info-it9 {
+  cursor: pointer;
+    margin: 1px 20px;
+}
+
+
+.info .contenidopo .info-it1 img{
+    width: 80px;
+    height: 70px;
+    border-radius: 10%;
+}
+.info .contenidopo .info-it2 img {
+    width: 70px;
+    height: 80px;
+    border-radius: 10%;
+}
+.info .contenidopo .info-it3 img {
+  margin: 10px;
+    width: 160px;
+    height: 50px;
+    border-radius: 0%;
+}
+.info .contenidopo .info-it4 img {
+    width: 80px;
+    height: 70px;
+    border-radius: 10%;
+}
+.info .contenidopo .info-it5 img {
+    width: 60px;
+    height: 70px;
+    border-radius: 10%;
+}
+.info .contenidopo .info-it6 img {
+    width: 160px;
+    height: 70px;
+    border-radius: 10%;
+}
+.info .contenidopo .info-it7 img {
+    width: 70px;
+    height: 80px;
+    border-radius: 10%;
+}
+.info .contenidopo .info-it8 img {
+    width: 110px;
+    height: 70px;
+    border-radius: 10%;
+}
+.info .contenidopo .info-it9 img {
+  margin: 10px;
+    width: 110px;
+    height: 50px;
+    border-radius: 10%;
+}
+
+
+.info .contenidopo .info-it1:hover {
+-webkit-transform: scale(1.3);
+-ms-transform: scale(1.3);
+transform: scale(1.3);
+}
+
+.info .contenidopo .info-it2:hover {
+-webkit-transform: scale(1.3);
+-ms-transform: scale(1.3);
+transform: scale(1.3);
+}
+
+.info .contenidopo .info-it3:hover {
+-webkit-transform: scale(1.3);
+-ms-transform: scale(1.3);
+transform: scale(1.3);
+}
+
+.info .contenidopo .info-it4:hover {
+-webkit-transform: scale(1.3);
+-ms-transform: scale(1.3);
+transform: scale(1.3);
+}
+.info .contenidopo .info-it5:hover {
+-webkit-transform: scale(1.3);
+-ms-transform: scale(1.3);
+transform: scale(1.3);
+}
+.info .contenidopo .info-it6:hover {
+-webkit-transform: scale(1.3);
+-ms-transform: scale(1.3);
+transform: scale(1.3);
+}
+.info .contenidopo .info-it7:hover {
+-webkit-transform: scale(1.3);
+-ms-transform: scale(1.3);
+transform: scale(1.3);
+}
+.info .contenidopo .info-it8:hover {
+-webkit-transform: scale(1.3);
+-ms-transform: scale(1.3);
+transform: scale(1.3);
+}
+.info .contenidopo .info-it9:hover {
+-webkit-transform: scale(1.3);
+-ms-transform: scale(1.3);
+transform: scale(1.3);
+}

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" >
+<title>CIMETCLIM</title>
+{% load static %}
+<link rel="stylesheet" href="{% static 'inicio/TeachC/css/estilos.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'inicio/TeachC/static/css/styles.css' %}"/>
+<link rel="stylesheet" href="{% static 'inicio/TeachC/cumulus/styles.css' %}">
+<link rel="stylesheet" href="{% static 'servicios/servicios.css' %}">
+<link rel="stylesheet" href="{% static 'estaciones/seleccionazul.css' %}">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+
+    <body class=""><!-- html solo para el menu responsive -->
+    <div  class="menu-mobile-open icon-menu"></div>
+    <div class="menu-mobile-close icon-close"></div>
+    <div class="menu-overlay"></div>
+    <!-- html solo para el menu responsive --><div class="cnt-wrapper">
+        <div class="wrapper">
+            <header class="header">
+                <div class="header-fixed">
+                    <div class="h-menu-inner">
+                        <div class="h-menu2 wancho">
+                            <div class="h-cnt-items">
+        <div class="-head-info">
+            <a class="h-item" href="/instrumentos/" target="_blank">Productos y Servicios</a>
+            <a class="h-item" href="/cambio-climatico/" target="_blank">Cambio Climático</a>
+            <a class="h-item" href="{% url 'teach' %}" target="_blank">Aprende con Cimetclim</a>
+        </div>
+                            </div>
+                        </div>
+                    </div>
+
+    <div class="h-inner">
+        <div class="header-bloque wancho">
+            <div class="wancho header-ctn clearfix">
+                <a href="{% url 'inicio' %}" class="header-logo">
+                    <img src="{% static 'inicio/TeachC/static/img/header-logo.png' %}"></a>
+                    <nav class="menu">
+                        <div class="menu-wrap">
+                            <ul class="menu-list">
+                                <li class="menu-item  "><a href="{% url 'inicio' %}" class="menu-link"><span class="primero"><i class="icon icon-home"></i></span>Inicio</a></li>
+                                <li class="menu-item "><a href="{% url 'nosotros' %}" class="menu-link"><span class="segundo"><i class="icon icon-globe"></i></span>Nosotros</a></li>
+                                <li class="menu-item "><a href="{% url 'goesvis' %}" class="menu-link"><span class="tercero"><i class="icon icon-satelite"></i></span>Imágenes Satelitales</a></li>
+                                <li class="menu-item "><a href="{% url 'pres' %}" class="menu-link"><span class="cuarto"><i class="icon icon-align-right"></i></span>Modelos Numéricos</a></li>
+                                <li class="menu-item "><a href="/contacto/" class="menu-link"><span class="quinto"><i class="icon-server"></i></span>Estaciones</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+   </center>
+
+<br><br><br>
+<br>
+
+   <h2 class="texto" style="font-size: 2em;">Seleccione una estación</h2>
+
+   <!--surround the select box with a "custom-select" DIV element. Remember to set the width:-->
+<div class="custom-select">
+     <select id="seleccion" name="cd-dropdown">
+       <!-- <option value="-1" selected>Ninguno</option> -->
+       <option value="1">Von Humboldt</option>
+       <option value="2">Huayao</option>
+       <option value="3">Cusco</option>
+       <option value="4">Cañete</option>
+     </select>
+   </div>
+<br><br>
+<div class="tempestaciones">
+        <div class="pr-price d1">
+          {% if graph %}
+          <div style="width:800;height:500">
+          {{ graph|safe }}
+          </div>
+          {% endif %}</div>
+        <div class="pr-price d2">
+          {% if graph2 %}
+          <div style="width:800;height:500">
+          {{ graph2|safe }}
+          </div>
+          {% endif %}</div>
+        <div class="pr-price d3">
+          {% if graph3 %}
+          <div style="width:800;height:500">
+          {{ graph3|safe }}
+          </div>
+          {% endif %}</div>
+        <div class="pr-price d4">
+          {% if graph4 %}
+          <div style="width:800;height:500">
+          {{ graph4|safe }}
+          </div>
+          {% endif %}</div>
+
+        </div>
+        <br>
+        <!-- <div class="pr-price d1">$100</div> -->
+        <!-- <div class="pr-price d2">�200</div> -->
+        <!-- <div class="pr-price d3">Rs300</div> -->
+        <!-- <div class="pr-price d4">D400</div> -->
+
+        <script src="{% static 'estaciones/agg.js' %}"></script>
+
+  <br><br>
+
+
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+	<title>CIMETCLIM-CCH</title>
+{% load static %}
+	<link rel="stylesheet" href="{% static 'inicio/Modelos/climato/cho/jshowoff.css' %}" type="text/css" media="screen, projection" />
+
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+	<script type="text/javascript" src="{% static 'inicio/Modelos/climato/cho/jquery.jshowoff.min.js' %}"></script>
+<link rel="stylesheet" type="text/css" href="{% static 'inicio/Modelos/climato/cho/static/css/styles.css' %}"/>
+<link rel="stylesheet" href="{% static 'inicio/Modelos/climato/cho/cumulus/styles.css' %}">
+<link rel="stylesheet" href="{% static 'inicio/Modelos/climato/cho/probar.css' %}">
+
+</head>
+    <div class=""><!-- html solo para el menu responsive -->
+    <div  class="menu-mobile-open icon-menu"></div>
+    <div class="menu-mobile-close icon-close"></div>
+    <div class="menu-overlay"></div>
+    <!-- html solo para el menu responsive --><div class="cnt-wrapper">
+        <div class="wrapper">
+            <header class="header">
+                <div class="header-fixed">
+                    <div class="h-menu-inner">
+                        <div class="h-menu2 wancho">
+                            <div class="h-cnt-items">
+        <div class="-head-info">
+            <a class="h-item" href="{% url 'servicios' %}" target="_blank">Productos y Servicios</a>
+            <a class="h-item" href="{% url 'cambioc' %}" target="_blank">Cambio Climático</a>
+            <a class="h-item" href="{% url 'teach' %}" target="_blank">Aprende con Cimetclim</a>
+        </div>
+                            </div>
+                        </div>
+                    </div>
+
+    <div class="h-inner">
+        <div class="header-bloque wancho">
+            <div class="wancho header-ctn clearfix">
+                <a href="{% url 'inicio' %}" class="header-logo">
+                    <img src="{% static 'inicio/Modelos/climato/cho/static/img/header-logo.png' %}"></a>
+                    <nav class="menu">
+                        <div class="menu-wrap">
+                            <ul class="menu-list">
+                                <li class="menu-item  "><a href="{% url 'inicio' %}" class="menu-link"><span class="primero"><i class="icon icon-home"></i></span>Inicio</a></li>
+                                <li class="menu-item "><a href="{% url 'nosotros' %}" class="menu-link"><span class="segundo"><i class="icon icon-globe"></i></span>Nosotros</a></li>
+                                <li class="menu-item "><a href="{% url 'goesvis' %}" class="menu-link"><span class="tercero"><i class="icon icon-satelite"></i></span>Imágenes Satelitales</a></li>
+                                <li class="menu-item "><a href="{% url 'pres' %}" class="menu-link"><span class="cuarto"><i class="icon icon-align-right"></i></span>Modelos Numéricos</a></li>
+                                <li class="menu-item "><a href="{% url 'estaciones' %}" class="menu-link"><span class="quinto"><i class="icon-server"></i></span>Estaciones</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+  <!-- contenedor del menu responsive -->
+  <div class="menu-sidebar">
+    <div class="menu-sidebar-cnt">
+
+    </div>
+  </div>
+
+</div>
+</div>
+</div>
+
+    <br>
+    <br>
+<body>
+
+  <div class="wrapper">
+ <div>
+ 	<h9 style="font-family: times, serif; font-size:20pt; font-style:roboto; color: #4C4C4C">Climatolog&iacute;a:</h9>
+ </div>
+<div class="buttons">
+    <a href="{% url 'pres' %}" class="btn blue">Presión Atmosférica</a>
+    <a href="{% url 'cho' %}" class="btn green">Corriente en Chorro</a>
+    <a href="{% url 'tmn' %}" class="btn red">Temperatura m&iacute;nima</a>
+    <a href="{% url 'tmx' %}" class="btn purple">Temperatura m&aacute;xima</a>
+  </div>
+</div>
+
+<div>
+	<h9 style="font-family: times, serif; font-size:20pt; font-style:roboto; color: #4C4C4C">Pron&oacute;sticos:</h9>
+</div>
+<div class="buttons">
+    <a href="{% url 'pres2' %}" class="btn blue">Presión Atmosférica</a>
+    <a href="{% url 'advt' %}" class="btn green">Advecci&oacute;n de Temperatura</a>
+    <a href="{% url 'l850' %}" class="btn red">L&iacute;nea de Corriente 850hPa</a>
+    <a href="{% url 'l500' %}" class="btn purple">L&iacute;nea de Corriente 500hPa</a>
+    <a href="{% url 'l250' %}" class="btn orange">L&iacute;nea de Corriente 250hPa</a>
+    <a href="{% url 'mgp' %}" class="btn yellow">Altura Geopotencial (mgp) - Frentes</a>
+  </div>
+</div>
+
+{% block content %}{% endblock %}
+
+<div class="buttons">
+    <a href="{% url 'inicio' %}" class="btn purple">Volver a Inicio</a>
+  </div>
+</body>
+</html>

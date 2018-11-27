@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" >
+<title>CIMETCLIM</title>
+{% load static %}
+<link rel="stylesheet" href="{% static 'inicio/TeachC/css/estilos.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'inicio/TeachC/static/css/styles.css' %}"/>
+<link rel="stylesheet" href="{% static 'inicio/TeachC/cumulus/styles.css' %}">
+</head>
+
+
+    <body class=""><!-- html solo para el menu responsive -->
+    <div  class="menu-mobile-open icon-menu"></div>
+    <div class="menu-mobile-close icon-close"></div>
+    <div class="menu-overlay"></div>
+    <!-- html solo para el menu responsive --><div class="cnt-wrapper">
+        <div class="wrapper">
+            <header class="header">
+                <div class="header-fixed">
+                    <div class="h-menu-inner">
+                        <div class="h-menu2 wancho">
+                            <div class="h-cnt-items">
+        <div class="-head-info">
+            <a class="h-item" href="{% url 'servicios' %}" target="_blank">Productos y Servicios</a>
+            <a class="h-item" href="{% url 'cambioc' %}" target="_blank">Cambio Climático</a>
+            <a class="h-item" href="{% url 'teach' %}" target="_blank">Aprende con Cimetclim</a>
+        </div>
+                            </div>
+                        </div>
+                    </div>
+
+    <div class="h-inner">
+        <div class="header-bloque wancho">
+            <div class="wancho header-ctn clearfix">
+                <a href="{% url 'inicio' %}" class="header-logo">
+                    <img src="{% static 'inicio/TeachC/static/img/header-logo.png' %}"></a>
+                    <nav class="menu">
+                        <div class="menu-wrap">
+                            <ul class="menu-list">
+                                <li class="menu-item  "><a href="{% url 'inicio' %}" class="menu-link"><span class="primero"><i class="icon icon-home"></i></span>Inicio</a></li>
+                                <li class="menu-item "><a href="{% url 'nosotros' %}" class="menu-link"><span class="segundo"><i class="icon icon-globe"></i></span>Nosotros</a></li>
+                                <li class="menu-item "><a href="{% url 'goesvis' %}" class="menu-link"><span class="tercero"><i class="icon icon-satelite"></i></span>Imágenes Satelitales</a></li>
+                                <li class="menu-item "><a href="{% url 'pres' %}" class="menu-link"><span class="cuarto"><i class="icon icon-align-right"></i></span>Modelos Numéricos</a></li>
+                                <li class="menu-item "><a href="{% url 'estaciones' %}" class="menu-link"><span class="quinto"><i class="icon-server"></i></span>Estaciones</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+  <!-- contenedor del menu responsive -->
+  <div class="menu-sidebar">
+    <div class="menu-sidebar-cnt">
+
+    </div>
+  </div>
+
+  <script src="{% static 'inicio/TeachC/static/js/nubesitas.js' %}" type="text/javascript"></script>
+  <script src="{% static 'inicio/TeachC/static/js/rayitos.js' %}" type="text/javascript"></script>
+</div>
+</div>
+
+
+<body>
+    <br>
+    <br>
+    <br>
+    <center><h1 class="title" style="font-family: times, serif; font-size:20pt; font-style:roboto; color: #4C4C4C">Bienvenidos al Portal de Aprendiendo con CIMETCLIM</h1></center>
+    <div class="container2">
+
+        <div class="card">
+            <iframe  height="230" src="https://www.youtube.com/embed/AJxLEihZGNE?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <h4 style="font-family: times, serif; font-size:14pt; font-style:roboto; color: #4C4C4C">¿Meteorolog&iacute;a?</h4>
+            <p>La Organizaci&oacute;n Meteorol&oacute;gica Mundial (OMM) da una breve explicaci&oacute;n del porque el mundo necesita a los Meteorologos</p>
+            <a href="https://www.youtube.com/channel/UCMCDaG2oNwzEZLTk4ZJiWjg?pbjreload=10">Ver más</a>
+        </div>
+
+        <div class="card">
+            <iframe height="230" src="https://www.youtube.com/embed/ikg8StEiGC0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <h4 style="font-family: times, serif; font-size:14pt; font-style:roboto; color: #4C4C4C">UNALM</h4>
+            <p>En el Per&uacute;, la Universidad Nacional Agraria La Molina es la única instituci&oacute;n educativa superior que forma profesionales en Meteorolog&iacute;a</p>
+            <a href="https://www.youtube.com/channel/UCfRQ2kJiUZYYqqSX9DYdq-Q">Ver más</a>
+        </div>
+
+        <div class="card">
+            <iframe height="230" src="https://www.youtube.com/embed/8gII_aUzwn8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <h4 style="font-family: times, serif; font-size:14pt; font-style:roboto; color: #4C4C4C">Instrumentos Meteorol&oacute;gicos</h4>
+            <p>En funci&oacute;n de para qu&eacute; la vayas a usar, te resultar&aacute; interesante saber qu&eacute; tipos de instrumentos meteorol&oacute;gicos hay y qu&eacute; funci&oacute;n tienen cada una</p>
+            <a href="https://www.youtube.com/channel/UCau4-kG-esaX6dc3X1g44vg">Ver más</a>
+        </div>
+
+         <div class="card">
+            <iframe height="230" src="https://www.youtube.com/embed/gaeMFVR35mU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <h4 style="font-family: times, serif; font-size:14pt; font-style:roboto; color: #4C4C4C">Las Heladas</h4>
+            <p>Las heladas son fen&oacute;menos que ocurren en las zonas altoandinas de nuestro pa&iacute;s entre los meses de mayo a setiembre</p>
+            <a href="https://www.youtube.com/channel/UCSy_etV_nlGLFlq7KTx1e9Q">Ver más</a>
+        </div>
+         <div class="card">
+            <iframe height="230" src="https://www.youtube.com/embed/WozuLXiwasg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <h4 style="font-family: times, serif; font-size:14pt; font-style:roboto; color: #4C4C4C">Tipos de Nubes</h4>
+            <p>Los tipos de nubes son muy variados en nuestro cielo y cada uno representa una condici&oacute;n meteorol&oacute;gica</p>
+            <a href="https://www.youtube.com/channel/UCSy_etV_nlGLFlq7KTx1e9Q">Ver más</a>
+        </div>
+         <div class="card">
+            <iframe height="230" src="https://www.youtube.com/embed/p2PvyyCE8J0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <h4 style="font-family: times, serif; font-size:14pt; font-style:roboto; color: #4C4C4C">Los Friajes</h4>
+            <p>Es una masa de aire fr&iacute;o proveniente de la Ant&aacute;rtida que contribuye al descenso brusco de la temperatura en la selva</p>
+            <a href="https://www.youtube.com/channel/UCSy_etV_nlGLFlq7KTx1e9Q">Ver más</a>
+        </div>
+
+         <div class="card">
+            <iframe height="230" src="https://www.youtube.com/embed/E6iZ5eIWJX8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <h4 style="font-family: times, serif; font-size:14pt; font-style:roboto; color: #4C4C4C">LLuvia en la Sierra</h4>
+            <p>Alguna vez te has preguntado ¿Porqu&eacute; llueve en la sierra peruana, mientras que la cost&aacute; esta en pleno verano? SENAMHI nos explica</p>
+            <a href="https://www.youtube.com/channel/UCSy_etV_nlGLFlq7KTx1e9Q">Ver más</a>
+        </div>
+         <div class="card">
+            <iframe height="230" src="https://www.youtube.com/embed/nPZDOgL0nxw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <h4 style="font-family: times, serif; font-size:14pt; font-style:roboto; color: #4C4C4C">Fen&oacute;meno El Niño</h4>
+            <p>Un patr&oacute;n clim&eacute;tico recurrente que implica cambios en la temperatura de las aguas en la parte central y oriental del Pac&iacute;fico tropical</p>
+            <a href="https://www.youtube.com/channel/UCaVPhFg-Ax873wvhbNitsrQ">Ver más</a>
+        </div>
+         <div class="card">
+            <iframe height="230" src="https://www.youtube.com/embed/weIBPwFuYwA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <h4 style="font-family: times, serif; font-size:14pt; font-style:roboto; color: #4C4C4C">Cambio Clim&aacute;tico</h4>
+            <p>Es la mayor amenaza medioambiental a la que se enfrenta la humanidad y pretender que el cambio climático no es real no hará que desaparezca</p>
+            <a href="https://www.youtube.com/channel/UCX16cLWl6dCjlZMgUBxgGkA">Ver más</a>
+        </div>
+    </div>
+
+
+</body>
+</html>

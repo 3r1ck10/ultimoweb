@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8">
+<title>CIMETCLIM</title>
+{% load static %}
+<link rel="stylesheet" href="{% static 'inicio/Nosotros/Nombre/css/nombre.css' %}">
+<link rel="stylesheet" href="{% static 'inicio/Nosotros/Notas/css/estilos.css' %}">
+<link rel="stylesheet" href="{% static 'inicio/Nosotros/Footer/cssfooter/estilos1.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'inicio/Nosotros/static/css/styles.css' %}"/>
+<link rel="stylesheet" href="{% static 'inicio/Nosotros/cumulus/styles.css' %}">
+
+  <link rel="stylesheet" href="{% static 'inicio/Nosotros/estilos.css' %}">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <style>
+    .wrapper{
+      display:grid;
+      grid-template-columns: 110%;
+      grid-gap:1em;
+    }
+
+    .wrapper > div{
+      background:#fff;
+      padding:0.1em;
+    }
+    .wrapper > div:nth-child(odd){
+      background:#fff;
+    }
+
+  </style>
+</head>
+
+<!-- html solo para el menu responsive -->
+	<div  class="menu-mobile-open icon-menu"></div>
+	<div class="menu-mobile-close icon-close"></div>
+	<div class="menu-overlay"></div>
+	<!-- html solo para el menu responsive -->
+	<div class="cnt-wrapper">
+		<div class="wrapper">
+			<header class="header">
+				<div class="header-fixed">
+					<div class="h-menu-inner">
+						<div class="h-menu2 wancho">
+							<div class="h-cnt-items">
+		<div class="-head-info">
+			<a class="h-item" href="{% url 'servicios' %}"  target="_blank">Productos y Servicios</a>
+			<a class="h-item" href="{% url 'cambioc' %}" target="_blank">Cambio Climático</a>
+			<a class="h-item" href="{% url 'teach' %}" target="_blank">Aprende con Cimetclim</a>
+	    </div>
+                            </div>
+                        </div>
+                    </div>
+
+	                <div class="h-inner">
+		                <div class="header-bloque wancho">
+			                <div class="wancho header-ctn clearfix">
+				                <a href="{% url 'inicio' %}"  class="header-logo">
+					                <img src="{% static 'inicio/Nosotros/static/img/header-logo.png' %}"></a>
+					                <nav class="menu">
+						                <div class="menu-wrap">
+							                <ul class="menu-list">
+								                <li class="menu-item  "><a href="{% url 'inicio' %}" class="menu-link"><span class="primero"><i class="icon icon-home"></i></span>Inicio</a></li>
+								                <li class="menu-item "><a href="{% url 'nosotros' %}" class="menu-link"><span class="segundo"><i class="icon icon-torsos-all"></i></span>Nosotros</a></li>
+								                <li class="menu-item "><a href="{% url 'goesvis' %}" class="menu-link"><span class="tercero"><i class="icon icon-satelite"></i></span>Imágenes Satelitales</a></li>
+								                <li class="menu-item "><a href="{% url 'pres' %}" class="menu-link"><span class="cuarto"><i class="icon icon-align-right"></i></span>Modelos Numéricos</a></li>
+								                <li class="menu-item "><a href="/contacto/" class="menu-link"><span class="quinto"><i class="icon-server"></i></span>Estaciones</a></li>
+							                </ul>
+						                </div>
+					                </nav>
+				            </div>
+			            </div>
+		            </div>
+
+	            </div>
+            </header>
+
+            <!-- contenedor del menu responsive -->
+            <div class="menu-sidebar">
+  	          <div class="menu-sidebar-cnt"></div>
+            </div>
+  <script src="{% static 'inicio/Nosotros/static/js/nubesitas.js' %}" type="text/javascript"></script>
+  <script src="{% static 'inicio/Nosotros/static/js/rayitos.js' %}" type="text/javascript"></script>
+
+        </div>
+    </div>
+
+<body>
+	<br>
+	<br>
+	<br>
+<!--contenedor total menos menu-->
+  <div class="wrapper">
+
+<!--contenedor del nombre-->
+      <div class="container">
+        <div class="title">CIMETCLIM</div>
+        <div class="subtitle">C&Iacute;RCULO DE INSVESTIGACI&Oacute;N EN METEOROLOG&Iacute;A Y CLIMATOLOG&Iacute;A</div>
+      </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="{% static 'inicio/Nosotros/Nombre/js/script.js' %}"></script>
+
+
+<!--contenedor de las notas-->
+    <div class="container2">
+      <div class="card">
+            <img src="{% static 'inicio/Nosotros/Notas/img/img1.jpg' %}">
+            <h4 style="font-family: times, serif; font-size:14pt; font-style:roboto; color: #4C4C4C">¿Qui&eacute;nes Somos?</h4>
+            <p>Somos un circulo de investigación integrado por egresados y alumnos de la Universidad Nacional Agraria La Molina. Nuestra pasión por la meteorología y climatología nos ha juntado en esta organización que apunta a lo mas alto. </p>
+
+        </div>
+
+        <div class="card">
+            <img src="{% static 'inicio/Nosotros/Notas/img/img2.jpg' %}">
+            <h4 style="font-family: times, serif; font-size:14pt; font-style:roboto; color: #4C4C4C">Misi&oacute;n</h4>
+            <p>Generar investigación en meteorología y climatología buscando solucionar problemáticas relevantes del área en nuestro país y a nivel global apostando por la innovación en nuestros métodos.</p>
+
+        </div>
+
+        <div class="card">
+            <img src="{% static 'inicio/Nosotros/Notas/img/img3.jpg' %}">
+            <h4 style="font-family: times, serif; font-size:14pt; font-style:roboto; color: #4C4C4C">Visi&oacute;n</h4>
+            <p>Ser líderes de investigación en ciencias atmosféricas a nivel nacional generando productos científicos de alto nivel en el área.</p>
+
+        </div>
+    </div>
+
+</div>
+
+
+<h4 align="center" style="font-family: times, serif; font-size:14pt; font-style:roboto; color: #4C4C4C">Miembros:</h4>
+<br>
+  <section class="portafolio">
+    <div class="portafolio-container">
+      <section class="portafolio-item">
+        <img src="{% static 'inicio/Nosotros/img/1.jpg' %}" alt="" class="portafolio-img">
+        <section class="portafolio-text">
+          <h2>Erick Alvarez S.</h2>
+          <p>CEO (Presidente Ejecutivo)</p>
+        </section>
+      </section>
+      <section class="portafolio-item">
+        <img src="{% static 'inicio/Nosotros/img/2.jpg' %}" alt="" class="portafolio-img">
+        <section class="portafolio-text">
+          <h2>Yoel Alania S.</h2>
+          <p>Front end Developer in Meteorology</p>
+        </section>
+      </section>
+      <section class="portafolio-item">
+        <img src="{% static 'inicio/Nosotros/img/3.jpg' %}" alt="" class="portafolio-img">
+        <section class="portafolio-text">
+          <h2>Aracelly Mallma</h2>
+          <p>Electrónica e Impresión 3D</p>
+        </section>
+      </section>
+            <section class="portafolio-item">
+        <img src="{% static 'inicio/Nosotros/img/4.jpg' %}" alt="" class="portafolio-img">
+        <section class="portafolio-text">
+          <h2>Eduardo soto</h2>
+          <p>Electrónica e Impresión 3D</p>
+        </section>
+      </section>
+    </div>
+  </section>
+<br>
+  <section class="portafolio">
+    <div class="portafolio-container">
+      <section class="portafolio-item">
+        <img src="{% static 'inicio/Nosotros/img/5.jpg' %}" alt="" class="portafolio-img">
+        <section class="portafolio-text">
+          <h2>Sergio Mitma</h2>
+          <p>Electrónica e Impresión 3D</p>
+        </section>
+      </section>
+      <section class="portafolio-item">
+        <img src="{% static 'inicio/Nosotros/img/6.jpg' %}" alt="" class="portafolio-img">
+        <section class="portafolio-text">
+          <h2>Mariano Juan</h2>
+          <p>Análisis Climático</p>
+        </section>
+      </section>
+      <section class="portafolio-item">
+        <img src="{% static 'inicio/Nosotros/img/7.jpg' %}" alt="" class="portafolio-img">
+        <section class="portafolio-text">
+          <h2>kireyna Perez</h2>
+          <p>Análisis Climático</p>
+        </section>
+      </section>
+            <section class="portafolio-item">
+        <img src="{% static 'inicio/Nosotros/img/8.jpg' %}" alt="" class="portafolio-img">
+        <section class="portafolio-text">
+          <h2>Anibal Moises</h2>
+          <p>Apoyo en Meteorología</p>
+        </section>
+      </section>
+    </div>
+  </section>
+  <br>
+
+  <section class="portafolio">
+    <div class="portafolio-container">
+      <section class="portafolio-item">
+        <img src="{% static 'inicio/Nosotros/img/9.jpg' %}" alt="" class="portafolio-img">
+        <section class="portafolio-text">
+          <h2>Jerson Jared</h2>
+          <p>Apoyo en Meteorología</p>
+        </section>
+      </section>
+      <section class="portafolio-item">
+        <img src="{% static 'inicio/Nosotros/img/10.jpg' %}" alt="" class="portafolio-img">
+        <section class="portafolio-text">
+          <h2>Ana B. Arroyo</h2>
+          <p>Apoyo en Meteorología</p>
+        </section>
+      </section>
+      <section class="portafolio-item">
+        <img src="{% static 'inicio/Nosotros/img/11.jpg' %}" alt="" class="portafolio-img">
+        <section class="portafolio-text">
+          <h2>Carmen R. Farfan</h2>
+          <p>Apoyo en Meteorología</p>
+        </section>
+      </section>
+            <section class="portafolio-item">
+        <img src="{% static 'inicio/Nosotros/img/12.jpg' %}" alt="" class="portafolio-img">
+        <section class="portafolio-text">
+          <h2>Levi C. Sanchez</h2>
+          <p>Apoyo en Meteorología</p>
+        </section>
+      </section>
+    </div>
+  </section>
+  <br>
+  <br>
+</body>
+</body>
+</html>
